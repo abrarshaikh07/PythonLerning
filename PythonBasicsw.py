@@ -61,3 +61,21 @@
     # print(x)
     #
     # add method
+# tupels
+# tu=(1,2,3)
+# print(tu)
+# print(tu.count(1))
+
+print("Enter your favourite movies name: ")
+a=list[input(str("First: "))]
+b=list[input(str("Second: "))]
+c=list[input(str("Third: "))]
+d=list(a+b+c)
+print(a)
+print(b)
+print(c)
+
+print(d)
+# a=[1,2,30]
+# b=[464,5456,5]
+# print(a+b)
