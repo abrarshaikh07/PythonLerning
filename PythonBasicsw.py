@@ -301,5 +301,27 @@
 #     b=c
 #
 #
+# tup=('abrar','ahamad','aman')
+# x='aman'
+# i=0
+# while i<len(tup):
+#     if (tup[i]==x):
+#       print(f"fount at  {i}")
+#     i+=1
+#
+# for i in range(1,10):
+#     if (i%2==0):
+#         continue
+#     print(i)
 
+# n=int(input("enter last number "))
+# n=n+1
+# n=n*n
+# n=n/2
+# print(n)
 
+k=int(input("enter number:"))
+sum=0
+for i in range(1,k+1):
+    sum+=i
+print(sum)
