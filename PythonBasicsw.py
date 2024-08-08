@@ -231,8 +231,13 @@
 # a.add("abrar")
 # print(a)
 
-se={'dsfsd'}
-# se1=set()
-# se.add("Abrar")
+# se={'dsfsd','abrar','aman','hasnian'}
+# # se1=set()
+# # se.add("Abrar")
+# # # print(se)
 # print(se)
-print(se)
+# print(type(se))
+# s=[se]
+# print(type(s))
+# print(s[0])
+# print(s)
