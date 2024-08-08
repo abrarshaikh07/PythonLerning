@@ -179,11 +179,60 @@
 # s=(a,b,c)
 # print(s)
 
-#Dict
-a={
-    'subject': 'ma',
-     'fdfs': ' fdsf'
+#set and tuple
+# a={
+#     ('subject', 9),
+#     ('fdfs',10)
+#
+#
+# }
+# print(a)
+# print(type(a))
 
+#list calling
+# a=[1,2,3,4,5]
+# print(a)
+# print(a[0])
+# m=[7]
+# x=a.__add__(m)
+# print(x)
 
-}
-print(a)
+#tuple calling
+# a=(1,2,3,4)
+# print(a)
+# print(a[1],)
+# n=(10,11)
+# print(type(n))
+# y=a.__add__((n))
+# print(y)
+
+#dict calling
+# dict={}
+#
+# user=input("Enter your name: \n")
+# add=input("Enter your address: \n")
+# dict.update({user: add})\
+#
+# user=input("Enter your name: \n")
+# add=input("Enter your address: \n")
+# dict.update({user: add})\
+#
+#
+#
+# print(dict)
+# print(dict["Abrar"])
+# print(type(dict))
+
+# set calling
+# a=set()
+# print(type(a))
+# a.update(input("Enter your name: \n"))
+# print(a)
+# a.add("abrar")
+# print(a)
+
+se={'dsfsd'}
+# se1=set()
+# se.add("Abrar")
+# print(se)
+print(se)
