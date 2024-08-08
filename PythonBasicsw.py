@@ -241,3 +241,21 @@
 # print(type(s))
 # print(s[0])
 # print(s)
+
+my_set = {1, 2, 3, 4, 5}
+
+# Iterate over the set
+# for a in my_set:
+#     print(a)
+# if 3 in my_set:
+#     print("3 is in the set")
+
+#loops
+#while
+count=str(input("Enter your name: \n"))
+i=1
+
+while i  <=5:
+    print("Happy Birthda Saiyed {} sahab")
+    i+=5
+
