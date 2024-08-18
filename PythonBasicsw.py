@@ -320,8 +320,120 @@
 # n=n/2
 # print(n)
 
-k=int(input("enter number:"))
-sum=0
-for i in range(1,k+1):
-    sum+=i
-print(sum)
+# k=int(input("enter number:"))
+# sum=0
+# for i in range(1,k+1):
+#     sum+=i
+# print(sum)
+# def k():
+#     i=int(input("Enter any number: \n"))
+#     j=int(input("Entry second number: \n"))
+#     print(i+j)
+# k()
+
+#avg function
+# def avg(a=int(input("enter \n")),b=int(input("enter \n")),c=int(input("Enter\n"))):
+#     sum=a+b+c
+#     d=sum/3
+#     print(d)
+#     return d
+#
+#
+# avg()
+# n=int(input("Enter number: \n"))
+# fact=1
+# for i in range(1,n+1):
+#     fact=fact*i
+#     # i+=1
+#
+# print(fact)
+
+#conver usd to cad
+# def converter(usd=int(input("Enter amount in USD\n"))):
+#     inr=usd*83
+#     print(f"conversion is\n{usd} is equal to {inr}")
+#
+# converter()
+
+# odd even function
+
+
+
+
+# def number_check(i=int(input("Enter any number:\n"))):
+
+# def num_check():
+#     i = int(input("enter number:\n"))
+#     while i !=0:
+#         if i%2==0:
+#             print("This is even number")
+#             num_check()
+#         else:
+#             print("this is odd")
+#             return
+#         break
+# num_check()
+# n=1
+# for i in n:
+#     n=int(input("enter number:\n"))
+#     if n%2==0:
+#         print("this is even")
+#         continue
+#     else:
+#         print("this is odd")
+#         break
+
+
+# for number in range(1000):  # The loop will iterate up to 1000 times
+#     number = int(input("Enter a number:\n"))
+#
+#     if number % 2 == 0:
+#         print(f"{number} is even. Continuing...")
+#         continue  # Continue to the next iteration if the number is even
+#     else:
+#         print(f"{number} is odd. Breaking the loop.")
+#         break  # Break the loop if the number is odd
+
+
+
+# sum+=n;
+
+
+
+
+
+# def sum_fn(n):
+#     if n<=1:
+#         return n
+#     return (n+sum_fn(n-1))
+#
+#
+#
+# x=sum_fn(n=int(input("Enter")))
+# print(x)
+# # def sum_funciton():
+#     if sum == 0:
+#         print(sum)
+#     for i in range(fn,ln):
+#         if i==ln:
+#             print(sum)
+#             break
+#         else:
+#            sum= sum +1
+#            i = +1
+#         sum_funciton()
+#
+#
+# def name(l,i=0):
+#     if (i==len(l)):
+#         return
+#
+#     print(l[i])
+#     name(l,i+1)
+
+# k=['abrar','aman','ahamad']ls
+
+# name(k)
+a=open("file.txt","rt")
+f=print(a.read())
+
