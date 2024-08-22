@@ -434,6 +434,88 @@
 # k=['abrar','aman','ahamad']ls
 
 # name(k)
-a=open("file.txt","rt")
-f=print(a.read())
+# a=open("file.txt","w+")
+# a.write("this is a write method which overwrite all the content")
+# a.seek(0)
+# k=a.read()
+# print(k)
+# a.close()
+# #
+# with open("file.txt","r") as a:
+#     print(a.read())  # no need to close the file  using this with function
+#
+# import os   #To delete file
+# os.remove("file.txt")
 
+
+# a=open("practice.txt","+w")
+# a.write("Hi everyone \n wxil i/o\n using java\n I like programming in java")
+# a.close()
+
+# with open("practice.txt","r+") as f:
+#     a=f.read()
+#     k=a.replace("java","Python")
+#
+# with open("practice.txt","w") as f:
+#     f.write(k)
+# \
+# with open("practice.txt","r") as f:
+#     k=f.read()
+#     j=k.find()
+#     print(j)
+
+
+# x
+#
+# k=check_for_line()
+# print(k)
+
+# with open("practice.txt","r") as f:
+#     s=f.read()
+#     p=s.len()
+#
+#     while p is True:
+#         word = input("Enter the word you want to search for: ")
+#         try:
+#             if(word in s):
+#                 print("Your word is found")
+#                 k=s.find(word)
+#                 print(k)
+#             break
+#         except ValueError:
+#             print("Not Found")
+
+# while True:
+#
+#     try:
+#         x=int(input("Enter number: "))
+#         break
+#     except ValueError:
+#         print("it is not int")
+
+try:
+    with open("practice.txt", "r") as f:
+        s = f.read()
+
+    while True:
+        try:
+            word = input("Enter the word you want to search for: ")
+            if word in s:
+                print("Your word is found")
+                k = s.find(word)
+                print(f"Word found at index: {k}")
+            else:
+                print("Not Found")
+        except Exception as e:
+            print(f"An error occurred during the search: {e}")
+
+        choice = input("Do you want to search for another word? (yes/no): ").lower()
+        if choice != "yes":
+            break
+
+except FileNotFoundError:
+    print("The file 'practice.txt' was not found.")
+except IOError:
+    print("An I/O error occurred while reading the file.")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
