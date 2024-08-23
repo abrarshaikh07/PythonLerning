@@ -493,29 +493,56 @@
 #     except ValueError:
 #         print("it is not int")
 
-try:
-    with open("practice.txt", "r") as f:
-        s = f.read()
+# try:
+#     with open("practice.txt", "r") as f:
+#         s = f.read()
+#
+#     while True:
+#         try:
+#             word = input("Enter the word you want to search for: ")
+#             if word in s:
+#                 print("Your word is found")
+#                 k = s.find(word)
+#                 print(f"Word found at index: {k}")
+#             else:
+#                 print("Not Found")
+#         except Exception as e:
+#             print(f"An error occurred during the search: {e}")
+#
+#         choice = input("Do you want to search for another word? (yes/no): ").lower()
+#         if choice != "yes":
+#             break
+#
+# except FileNotFoundError:
+#     print("The file 'practice.txt' was not found.")
+# except IOError:
+#     print("An I/O error occurred while reading the file.")
+# except Exception as e:
+#     print(f"An unexpected error occurred: {e}")
 
-    while True:
-        try:
-            word = input("Enter the word you want to search for: ")
-            if word in s:
-                print("Your word is found")
-                k = s.find(word)
-                print(f"Word found at index: {k}")
-            else:
-                print("Not Found")
-        except Exception as e:
-            print(f"An error occurred during the search: {e}")
+# with open("integer.txt", "w+") as f:
+#     k=f.write("1,5,75,89,564,56,46,72,92")
 
-        choice = input("Do you want to search for another word? (yes/no): ").lower()
-        if choice != "yes":
-            break
+# with open("integer.txt", "r") as f:
+#     # Read the content of the file
+#     data= f.read()
+#     num=""
+#     for i in range(len(data)):
+#         if (data[i]== ","):
+#             if int(num) % 2==0:
+#                 print(f"THis {num} is even number")
+#
+#             num=""
+#         else:
+#               num=num+data[i]
 
-except FileNotFoundError:
-    print("The file 'practice.txt' was not found.")
-except IOError:
-    print("An I/O error occurred while reading the file.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+with open("integer.txt", "r") as f:
+     data=f.read()
+     number=data.split(",")
+
+
+for i in number:
+    if (int(i) % 2==0):
+        print(i)
+
+
