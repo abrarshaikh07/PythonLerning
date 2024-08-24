@@ -535,14 +535,73 @@
 #             num=""
 #         else:
 #               num=num+data[i]
+#
+# with open("integer.txt", "r") as f:
+#      data=f.read()
+#      number=data.split(",")
+#
+#
+# for i in number:
+#     if (int(i) % 2==0):
+#         print(i)
+#
 
-with open("integer.txt", "r") as f:
-     data=f.read()
-     number=data.split(",")
+#class and objects
+
+# class Demo:
+#     name="Student"
+#
+# obj=Demo()
+# print(obj.name)
 
 
-for i in number:
-    if (int(i) % 2==0):
-        print(i)
+# class Demo2:
+    # # name = "Student"
+    # def __init__(self,name,address):
+    #     self.n=name
+    #     self.add=address
+    #
+    # #
+    # #
+    # #
+    # # def welcome(self):
+    # #     print("Welcome to world")
+    # #
+    # # def hello(self):
+    # #     print(f"Hello {self.n}")
+    # #
+    # #
 
 
+# print(obj.self)
+# obj=Demo2("abrar","kitchener")
+# # obj.welcome()
+# # print(obj.n)
+# obj.hello()
+
+
+# class Bank:
+#     def __init__(self,accountNo,balance):
+#         self.bal=balance
+#         self.acc=accountNo
+#     def credit(self,amount):
+#         self.am=amount+self.bal
+#         print(f"{self.am} $ is credited")
+#
+#     def credit(self,amount):
+#         self.bal=amount+self.bal
+#         print(f"{amount} $ is credited and balance is {self.bal}")
+#
+#     def debit(self, amount):
+#         self.bal = self.bal - amount
+#         print(f"{amount} $ is debited and balance is {self.bal}")
+#
+#     def getbalance(self):
+#         print(f"The Final balance is {self.bal}\n")
+#
+#
+# obj=Bank(int(input("Enter any number:\n")),int(input("enter balance\n")))
+#
+# obj.credit(int(input("how much do you want to credit\n")))
+# obj.debit(int(input("how much do you want to debit\n")))
+# obj.getbalance()
