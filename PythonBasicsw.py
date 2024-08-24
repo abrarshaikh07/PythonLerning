@@ -600,8 +600,47 @@
 #         print(f"The Final balance is {self.bal}\n")
 #
 #
-# obj=Bank(int(input("Enter any number:\n")),int(input("enter balance\n")))
+# obj=Bank(int(input("Enter any number:\n")),0)
 #
 # obj.credit(int(input("how much do you want to credit\n")))
 # obj.debit(int(input("how much do you want to debit\n")))
 # obj.getbalance()
+
+
+# deletint object
+# class student_name:
+#     def __init__(self,name):
+#         self.name=name
+# obj1=student_name("Love")
+# print(obj1.name)
+# del obj1
+#
+# try:
+#     print(obj1.name)
+# except Exception as e:
+#     print("object has been deleted")
+
+# private and public attribure of class
+
+# class pv:
+#     def __hello(self,name):
+#         self.name=name
+#         print("Hello from private method {}".format(name))
+#     def  welcome(self):
+#         print("I am gonna call __hello(private method)")
+#         self.__hello("love")
+#
+# obj_pv=pv()
+# # print(obj_pv)
+#
+# try:
+#     obj_pv.__hello("love")
+# except Exception as e:
+#     print("this is private method")
+#     print(obj_pv.welcome())
+
+
+
+
+#INHERITANCE
+
