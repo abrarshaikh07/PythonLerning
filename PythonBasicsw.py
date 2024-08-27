@@ -644,3 +644,18 @@
 
 #INHERITANCE
 
+
+class car():
+    def start(self):
+        print("Car is just started")
+    def stop(self):
+        print("You stopped the car {}".format(self.i))
+
+class Toyota(car)
+    def car_name(self,i):
+        self.i=i
+        print(f"Your car name is {self.i}")
+obj=Toyota()
+obj.car_name(input("Enter your card model\n"))
+obj.stop()
+
