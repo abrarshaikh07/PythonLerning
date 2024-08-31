@@ -607,7 +607,8 @@
 # obj.getbalance()
 
 
-# deletint object
+# deleting  object
+
 # class student_name:
 #     def __init__(self,name):
 #         self.name=name
@@ -641,21 +642,268 @@
 
 
 
+#
+# INHERITANCE
 
-#INHERITANCE
+
+# class car():
+#
+#     def __init__(self,type):
+#         self.type=type
+#         print(f"your {self.type}Car is just started")
+#     def start(self):
+#         print("your car is just started")
+#
+#
+#     def stop(self):
+#         print("You stopped the car {}".format(self.i))
+#
+# class Toyota(car):
+#
+#     def __init__(self,name,type):
+#         super().__init__(type)
+#         self.name=name
+#
+#
+# #
+# #
+# obj=Toyota(input("Enter the car type: \n"),input("Enter the car type\n"))
+# # print(obj.type)
+#
+#
+# # print(help(Toyota))
+# print(isinstance(obj,car)) # to check attribute whether it is object of class or not
+#changes on attribute of class and object
+
+# class person:
+#     name="anonumous"
+#
+#     def changename(self, name):
+#         self.name=name
+#         print(f"your name is {name}")
+#
+# obj=person()
+# obj.changename(input("Enter name\n"))
+# print(obj.name) # will print anonumous
+
+# how to change class name value using object.
+
+# #method 1
+# class person:
+#     name="anonumous"
+#
+#     def changename(self, name):
+#         person.name=name   #changes is here
+#         print(f"your name is {name}")
+#
+# obj=person()
+# obj.changename(input("Enter name\n"))
+# print(obj.name) # will print anonumous
 
 
-class car():
-    def start(self):
-        print("Car is just started")
-    def stop(self):
-        print("You stopped the car {}".format(self.i))
+#method 3 Creating class method
+# class person:
+#     name="anonumous"
+#
+#     # def changename(self, name):
+#     #     self.__class__.name=name   #changes is here
+#     #     print(f"your name is {name}")
+#
+#     def changename(cls,name):
+#         cls.name=name
+#         print(f"your name is {name}")
+#
+#
+# obj=person()
+# obj.changename(input("Enter name\n"))
+# print(obj.name)
+#
+#
+# class Subjects:
+#     def __init__(self, phy, math, che):
+#         self.phy = int(phy)
+#         self.math = int(math)
+#         self.che = int(che)
+#         total = self.phy + self.math + self.che
+#         avg = total / 3
+#         print("Your average grade is: {:.2f}".format(avg))
+#
+#
+# while True:
+#
+#     obj = Subjects(input("Enter physics marks: "), input("Enter Maths marks: "),
+#                input("Enter chemistry marks: "))
+#
+#     a=input("do you want to calculate more grades?\n")
+#     if a=='n':
+#         break
+#
+#
 
-class Toyota(car)
-    def car_name(self,i):
-        self.i=i
-        print(f"Your car name is {self.i}")
-obj=Toyota()
-obj.car_name(input("Enter your card model\n"))
-obj.stop()
 
+
+# #property
+# class Subjects:
+#     def __init__(self, phy, math, che):
+#         self.phy = int(phy)
+#         self.math = int(math)
+#         self.che = int(che)
+#
+#
+#     def perc(self):
+#         total =  self.phy + self.math + self.che
+#         avg = total / 3
+#         print("Your average grade is: {:.2f}".format(avg))
+#
+#
+#
+#
+# obj = Subjects(90,85,95)
+# obj.perc()
+# obj.phy=52
+# obj.perc()
+
+# Creating complex numbers
+# a = 3 + 4j
+# b = 5 - 2j
+#
+# # Accessing the real and imaginary parts
+# real_part = a.real  # 3.0
+# imaginary_part = a.imag  # 4.0
+#
+# # Performing operations on complex numbers
+# c = a + b  # (8+2j)
+# d = a * b  # (23+14j)
+# print(c)
+# print(d)
+
+
+
+
+#complext number in oops
+# class complex:
+#     def __init__(self,real,img):
+#         self.real=real
+#         self.img=img
+#     def show(self):
+#         print(self.real,"i +",self.img)
+#
+#     def __add__(self,num2):
+#        new_real=self.real+num2.real
+#        new_img=self.img+num2.img
+#        print(new_real, "i +", new_img)
+#        # print(num3)
+#        # return  complex(new_real,new_img)
+#
+#
+#
+# num1=complex(5,10)
+# num1.show()
+#
+# num2=complex(5,10)
+# num2.show()
+#
+# print(num1+num2)
+
+# num3=num1.add(num2)
+# num3.show()
+
+
+
+
+# class grade:
+#     def __init__(self,phy,che,math):
+#         self.phy=phy
+#         self.che=che
+#         self.math=math
+#         percentage=int((phy+che+math)/3)
+#         print(f"your avg is {percentage}")
+#
+#     @classmethod  #they are alternative constructor.They use if want to provide attribute not in the format of class attribute does.
+#     def customformat(cls,phy,che,math):
+#         cls.phy=float(phy)
+#         cls.che=float(che)
+#         cls.math=float(math)
+#         return cls(phy,che,math)
+# s1=grade(80,89,85)
+# s1.customformat(80,89,85)
+#
+
+# class Rectangle:
+#     number_of_instances = 0  # Class variable to keep track of instances
+#
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+#         Rectangle.number_of_instances += 1
+#
+#     def area(self):
+#         return self.length * self.width
+#
+#     @classmethod
+#     def from_square(cls, side_length):
+#         # Class method: creates a Rectangle with equal sides (a square)
+#         return cls(side_length, side_length)
+#
+#     @classmethod
+#     def get_instance_count(cls):
+#         # Class method: returns the number of Rectangle instances created
+#         return cls.number_of_instances
+#
+# # Create a rectangle using the regular constructor
+# # rect1 = Rectangle(5, 3)
+# # print(f"Area of rect1: {rect1.area()}")
+# #
+# # # Create a rectangle using the class method from_square
+# # square = Rectangle.from_square(4)
+# # print(f"Area of square: {square.area()}")
+# #
+# # Get the number of instances created
+# print(Rectangle.get_instance_count())
+#
+#
+#
+
+
+#repr method
+#
+# class mobile:
+#     def __init__(self,brand,year,model):
+#         self.brand=brand
+#         self.year=year
+#         self.model=model
+#
+#     def __repr__(self):
+#         return "mobile({} {} {})".format(self.brand,self .year,self.model)
+#
+#     # @property
+#     def __add__(self, other):
+#         return self.year+other.year
+#
+#     def __sub__(self, other):
+#         return self.year-other.year
+#
+#     def __len__(self):
+#         return  len(self.brand)
+#
+#     def fullname(self,year,brand,model):
+#         self.year=year
+#         self.brand=brand
+#         self.model=model
+#
+#         return ("{} {} {}").format(year,brand ,model)
+#
+# mobile_1=mobile("Toyota",2019,"Tundra")
+# mobile_2=mobile("Ford",2012,"F-150")
+# # print(mobile_1)
+# # print(mobile.__repr__(mobile_1))
+# # print(repr(mobile_1))
+#
+# # print(mobile_1+mobile_2)
+# # print(mobile_1-mobile_2)
+# # print(len(mobile_1))
+#
+# # print(mobile_1.__add__(mobile_2))   #using property decorator we can call method as an attribute, it will take the updated value\
+#
+# #setter method
+# print(mobile_1.fullname("sdfsf",464,"fdfsd"))
