@@ -624,15 +624,24 @@
 # private and public attribure of class
 
 # class pv:
+#
+#     def __init__(self):
+#         pass
+#
 #     def __hello(self,name):
 #         self.name=name
 #         print("Hello from private method {}".format(name))
-#     def  welcome(self):
+#     def welcome(self):
 #         print("I am gonna call __hello(private method)")
 #         self.__hello("love")
 #
+#
+#
 # obj_pv=pv()
-# # print(obj_pv)
+#
+# print(obj_pv.welcome())
+# print(obj_pv._pv__hello) # It is technically possobiole but in python we wouldn't do this.
+
 #
 # try:
 #     obj_pv.__hello("love")
@@ -907,3 +916,58 @@
 #
 # #setter method
 # print(mobile_1.fullname("sdfsf",464,"fdfsd"))
+
+
+
+
+# def greet(x):
+#      '''It will print two line and between them it runs one funciton.'''
+#      def func():
+#         print("Hi There, How are You?")
+#         x()
+#         print("Thanks for using this function!")
+#      return func
+# @greet
+# def s():
+#     print("Salam")
+# s()
+# print(greet.__doc__) # It will print the lined which are written just below function.They are not comment but they prvide info about fnunciton.
+
+
+
+
+# a=int(input("Enter num 1 \n"))
+# b=int(input("Enter num 2 \n"))
+# c=int(input("Enter num 3 \n"))
+# print(a) if a>b and a>c else  print(b) if b>c else print(c)
+#
+# import pandas
+#
+# print(pd.__version__)
+#
+# while True:
+#
+#
+#     double=lambda  x: x*x
+#     print(double(int(input("Enter any number\n"))))
+#
+#     i=input("do you want to continue\n")
+#     if i.lower()!="y":
+#         break
+#
+# a=(1,2,3,4,5,6)
+# new_a=tuple(map(lambda x: x*x,a))
+# print(new_a)
+#
+
+
+# a=(1,2,3,4,5,6)
+# def func(x):
+#     return x>=5
+# new_a=tuple(filter(func,a))
+# print(new_a)
+
+
+from functools import reduce
+import math
+print(math.sq   rt(25))
